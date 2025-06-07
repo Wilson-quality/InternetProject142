@@ -88,10 +88,10 @@ carregarPagina6.until(ExpectedConditions.presenceOfElementLocated(By.id("usernam
         motorDoNavegador.findElement(By.cssSelector("button.radius")).click(); //clicar no botão 
 
 
-//Usuario Correto e senha Vazia 7
+//Usuario vazio e senha correta 7
 WebDriverWait carregarPagina7 = new WebDriverWait(motorDoNavegador, Duration.ofSeconds(5)); //Aguardar até 5 seg até encontrar o elemento username
 carregarPagina7.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
-        motorDoNavegador.findElement(By.id("username")).clear(); 
+        motorDoNavegador.findElement(By.id("")).clear(); 
         motorDoNavegador.findElement(By.id("password")).clear();
         motorDoNavegador.findElement(By.id("username")).sendKeys("tomsmith"); //preencher o campo
         motorDoNavegador.findElement(By.id("password")).sendKeys(""); //preencher o campo
